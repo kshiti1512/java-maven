@@ -60,7 +60,7 @@
   
   <repositories>
         <repository>
-            <id>github-thirdparty</id>
+            <id>github</id>
             <url>https://maven.pkg.github.com/kshiti1512/java-maven</url>
             <name>EPS3 Nexus - Project Group</name>
             <releases>
