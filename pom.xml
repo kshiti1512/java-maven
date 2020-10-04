@@ -57,6 +57,24 @@
       <scope>test</scope>
     </dependency>
   </dependencies>
+  
+  <repositories>
+        <repository>
+            <id>github-thirdparty</id>
+            <url>https://maven.pkg.github.com/kshiti1512/java-maven</url>
+            <name>EPS3 Nexus - Project Group</name>
+            <releases>
+                <enabled>true</enabled>
+                <checksumPolicy>fail</checksumPolicy>
+                <updatePolicy>never</updatePolicy>
+            </releases>
+            <snapshots>
+                <enabled>true</enabled>
+                <checksumPolicy>fail</checksumPolicy>
+                <updatePolicy>interval:5</updatePolicy>
+            </snapshots>
+        </repository>
+    </repositories>
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
