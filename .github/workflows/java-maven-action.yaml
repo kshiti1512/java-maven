@@ -13,8 +13,7 @@ jobs:
         with:
           java-version: 1.8
       - name: Build with Maven
-        run: mvn clean install --file pom.xml
-      - uses: actions/upload-artifact@v2
-        with:
-          name: my-artifact
-          path: target/*.jar
+        run: mvn clean deploy
+        env:
+            GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+            GITHUB_ACTOR: kshiti1512
